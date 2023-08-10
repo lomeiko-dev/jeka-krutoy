@@ -1,11 +1,10 @@
-
-import { ITask } from "../../../6_Shared/Api/Task";
-import { IAddedTask } from "../model";
+import {IAddedTask} from "../model";
+import {ITask} from "../../../6_Shared/Api/Task";
 
 export const getTask = ({title, description}: IAddedTask) => {
-    let id: string = "id" + Math.random().toString(16).slice(2);
+    const id: string = Date.now().toString()
 
-    let task: ITask = {
+    const task: ITask = {
         id: id,
         description: description,
         title: title,

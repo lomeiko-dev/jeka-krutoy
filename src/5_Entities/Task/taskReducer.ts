@@ -2,7 +2,6 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IChangeTask, IIdTask, initTasks } from "./model";
 import { getTask } from "./lib/utils";
 import { ITask } from "../../6_Shared/Api/Task";
-import { RootState } from "../Store";
 
 const TaskReducer = createSlice({
     name: "tasks",

@@ -14,6 +14,6 @@ export const initTasks: ITasks = {
     error: null,
 }
 
-export interface IAddedTask extends Pick<ITask, 'title' | 'description'>{};
-export interface IChangeTask extends Pick<ITask, 'title' | 'description' | 'id'>{};
-export interface IIdTask extends Pick<ITask, 'id'>{};
+export interface IAddedTask extends Pick<ITask, 'title' | 'description'>{}
+export interface IChangeTask extends Pick<ITask, 'title' | 'description' | 'id'>{}
+export interface IIdTask extends Pick<ITask, 'id'>{}

@@ -1,5 +1,5 @@
-import './style.scss';
 import { wrap } from './Wrappers';
+import './style.scss';
 
 const App = () => {
   return (

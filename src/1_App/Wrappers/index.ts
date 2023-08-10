@@ -1,5 +1,5 @@
 import React from "react";
-import { WithRouter } from "./With-Router";
-import { WithStore } from "./With-Store";
+import {WithStore} from "./providers/With-Store";
+import {WithRouter} from "./providers/With-Router";
 
 export const wrap = (app: () => React.ReactNode) => WithStore(WithRouter(app));
